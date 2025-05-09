@@ -1232,10 +1232,10 @@ input.search {
 .search-button{
   background-color: #008a11 !important;
   border: none !important;
-  padding: 12px 7px;
+  padding: 12px 7px !important;
   cursor: pointer !important;
   align-items: center;
-  justify-content: center;
+  justify-content: center !important;
   width: 53px;
   height: 40px !important;
   border-radius: 32px !important;
@@ -1297,9 +1297,33 @@ input.search {
   color: #333333;
 }
 .accordion-header img {
-  width: 20px;
+  width: 20px !important;
 }
 .save-btn-container img
 {
-    width: 15px;
+    width: 15px !important;
+}
+.save-btn img
+{
+    width: 15px !important;
+}
+.btn-viewonmap img
+{
+    width: 15px !important;
+}
+#currentPage{
+  display: inline-block !important;
+}
+#inputCurrentPage{
+  box-sizing: content-box !important;
+}
+#transit-alert-tab-currentPage{
+  display: inline-block !important;
+}
+#transit-inputCurrentPage{
+  box-sizing: content-box !important;
+}
+#search-input{
+  padding: 0px !important;
+  line-height: 1px !important;
 }
