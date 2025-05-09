@@ -1,0 +1,327 @@
+/* small mobile screens */
+@media only screen and (max-width: 335px) {
+  .map-overlay {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 420px) and (min-width: 320px) {
+  .show-mobile-only-s {
+    display: inline-block;
+  }
+
+  .show-mobile-only-l {
+    display: none;
+  }
+
+  .tab-button {
+    padding: 5px 1px;
+    border: none;
+    background-color: #e0f3d3;
+    color: #008a11;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+    width: 24%;
+    margin-right: 5px;
+  }
+  .tab-button:first-child {
+    width: 27%;
+  }
+  .tab-button:last-child {
+    margin-right: 0px;
+    /* Override the margin-bottom only for the last element */
+  }
+}
+
+
+/* Large mobile screens */
+
+
+@media only screen and (max-width: 600px) and (min-width: 421px) {
+  .show-mobile-only-l {
+    display: inline-block;
+  }
+
+  .show-mobile-only-s {
+    display: none;
+  }
+
+  .tab-button {
+    padding: 5px 1px;
+    border: none;
+    background-color: #e0f3d3;
+    color: #008a11;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+    width: 92px;
+    margin-right: 10px;
+  }
+
+  .tab-button:last-child {
+    margin-right: 0px;
+    /* Override the margin-bottom only for the last element */
+  }
+}
+
+
+/* all mobile screen size */
+@media only screen and (max-width: 600px) {
+  .show-mobile-only {
+    display: inline-block;
+  }
+
+  .last-updated {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0px;
+    color: #444;
+  }
+
+  .save-btn {
+    box-shadow: 0px 4px 7px 0px #00000024;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 18px;
+    padding: 7px 10px;
+    /* border: 1px solid #008a11; */
+    color: #008a11;
+    justify-content: center;
+    width: auto;
+  }
+
+  .zoom-btn {
+    justify-content: space-around;
+    height: 80px;
+    width: 18px;
+  }
+
+  .location-btn-container {
+    font: 12px / 20px "Inter, Helvetica Neue", Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: auto;
+    bottom: 9%;
+    right: 0px;
+    padding: 5px;
+    z-index: 1;
+  }
+
+  .map-container {
+    position: relative;
+    height: 598px;
+    width: 100%;
+  }
+
+  .location-btn-mb {
+    padding: 10px;
+    width: auto;
+  }
+
+  .fullscreen-btn-mb {
+    padding: 10px;
+    width: auto;
+  }
+
+  .share-btn-mb {
+    padding: 10px;
+    width: auto;
+  }
+
+  #saveBtn_save_new {
+    width: 60px;
+  }
+
+  .map-overlay-inner {
+    /* Uncomment following to add scroll */
+    max-height: 518px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .share-map-container {
+    width: 270px;
+  }
+  .share-map-inner input[type="text"] {
+    width: 217px
+  }
+  .copy-btn span {
+    margin-right: 0px;
+}
+.maplibregl-popup{
+  z-index: 11;
+}
+.toggle-btn i{
+  display: flex;
+  font-size: 14px;
+}
+.main-traffic-content-container{
+  height: 100%;
+}
+#alert-tab-controller-container {
+  width: 100%;
+}
+
+#alert-tab-alert-container {
+  width: 100%;
+}
+.alert-controls {
+  width: -webkit-fill-available;
+  display: inline-block;
+  margin-top: 0px;
+  background-color: #F0FCED;
+}
+#alert-tab-controller-container .search-box {
+  width: 98%;
+  height: 48px;
+  margin-top: 10px;
+}
+#alert-tab-controller-container .search-box button {
+  width: 66px;
+  height: 49px;
+}
+.traffic-alert-filter-label{
+  padding: 15px 20px;
+  margin: 20px 0px 0px 0px;
+  background-color: #F0FCED;
+  border-top: 1px solid #C9C9C9;    
+  border-bottom: 1px solid #C9C9C9;
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.transit-alert-filter-label{
+  padding: 15px 20px;
+  margin: 20px 0px 0px 0px;
+  background-color: #F0FCED;
+  border-top: 1px solid #C9C9C9;    
+  border-bottom: 1px solid #C9C9C9;
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* margin top only for mobile */
+
+.alerts-filter {
+  display: inline-block;
+}
+.traffic-alert-card-title{
+  font-size: 16px !important;
+  margin-top: 20px;
+}
+.traffic-alert-card-description{
+  font-size: 18px !important;
+  font-weight: 700;
+  display: inline;
+}
+.display-inline-m{
+  display: inline;
+}
+.pl-0-m{
+  padding-left: 0px;
+}
+.transit-alert-card-inner-container {
+  display: inline;
+}
+.transit-alert-card-inner-container > :nth-child(1) {
+  width: 100%;
+}
+.transit-alert-card-inner-container > :nth-child(2) {
+  width: 100%;
+}
+.mt-10-m{
+  margin-top: 10px;
+}
+.mt-20-m{
+  margin-top: 20px;
+}
+.mr-0-m{
+  margin-right: 0px;
+}
+  .alerts-header p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+}
+
+
+/* for tablets */
+@media only screen and (max-width: 768px) and (min-width: 601px) {
+  #alert-tab-controller-container {
+    width: 35%;
+  }
+  #alert-tab-alert-container {
+    width: 66%;
+    margin-left: 7%;
+  }
+  .alerts-filter {
+    display: inline-block;
+    margin-top: 0px;
+  }
+  .mt-10-t{
+    margin-top: 10px;
+  }
+  .mt-20-t{
+    margin-top: 20px;
+  }
+  .w30-p-t{
+    width: 30%;
+  }
+  .transit-alert-card-inner-container {
+    display: flex;
+  }
+  .transit-alert-card-inner-container > :nth-child(1) {
+    width: 30%;
+  }
+  .transit-alert-card-inner-container > :nth-child(2) {
+    width: 70%;
+  }
+  #tab3 > div > div.alerts-header > p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+/* for small laptops */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  #alert-tab-controller-container {
+    width: 35%;
+  }
+  #alert-tab-alert-container {
+    width: 66%;
+
+  }
+  .w20-p-t{
+    width: 20%;
+  }
+  .transit-alert-card-inner-container {
+    display: flex;
+  }
+  .transit-alert-card-inner-container > :nth-child(1) {
+    width: 20%;
+  }
+  .transit-alert-card-inner-container > :nth-child(2) {
+    width: 80%;
+  }
+}
+
+/* for large laptops */
+@media only screen and (min-width: 1025px) {
+  .transit-alert-card-inner-container {
+    width: 100%;
+    display: flex;
+  }
+}
